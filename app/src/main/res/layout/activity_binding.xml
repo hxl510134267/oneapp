@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/toolbar_binding"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000">
+
+        <Button
+            android:id="@+id/back_binding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="返回"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="二维码绑定"/>
+
+    </FrameLayout>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:background="#f2f2f2">
+        
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/ic_qrcode_bind"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="绑定"/>
+        
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="请确认以下信息"/>
+        
+        <View
+            android:layout_width="351dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="56dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:text="操作:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="76dp"
+            android:layout_marginRight="12dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="绑定二维码"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="106dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:text="门店:"/>
+
+        <TextView
+            android:id="@+id/showName_binding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="106dp"
+            android:layout_marginRight="12dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:text="二维码:"/>
+
+        <TextView
+            android:id="@+id/qrcodeKey_binding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="136dp"
+            android:layout_marginRight="12dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+        
+        <View
+            android:layout_width="352dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="166dp"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="181dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:text="绑定功能:"/>
+
+        <View
+            android:layout_width="352dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="211dp"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="222dp"
+            android:layout_marginLeft="22dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="请选择绑定项"/>
+
+        <FrameLayout
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="211dp"
+            android:layout_marginRight="12dp"
+            >
+
+            <Spinner
+                android:id="@+id/function_binding"
+                android:background="@drawable/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/page"
+                android:visibility="visible">
+            </Spinner>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="352dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="248dp"
+            android:background="#e5e5e5"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="268dp"
+            android:background="#e5e5e5"/>
+
+    </FrameLayout>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2">
+
+        <Button
+            android:id="@+id/button_binding"
+            android:layout_width="351dp"
+            android:layout_height="48dp"
+            android:background="#03a9f5"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="确认绑定"/>
+
+    </LinearLayout>
+    
+</LinearLayout>

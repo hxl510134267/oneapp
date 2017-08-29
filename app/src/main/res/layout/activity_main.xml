@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:background="#f2f2f2"
+        android:layout_weight="0.11">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="146dp"
+            android:layout_height="133dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="69dp"
+            android:src="@mipmap/ic_home_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:text="顾客微信扫描绑定后的二维码"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:text="即可进入相应门店的小程序功能。"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E5E5E5" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_main"
+        android:layout_width="100dp"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:src="@mipmap/unchecked_mark"
+         />
+
+    <ImageView
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="-82dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_scan_code"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="13sp"
+        android:text="扫一扫"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_gravity="center"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:text="扫一扫掌贝小程序二维码进行绑定"/>
+
+    <TextView
+        android:id="@+id/text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="84dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="绑定记录"/>
+
+</LinearLayout>
